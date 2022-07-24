@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    -Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: 'Red Hat Display';
+    min-height: 100vh;
+    background-color: var(--Very-pale-blue);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.container {
+    background-color: white;
+    margin: 25px;
+    margin-top: 4.5rem;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 30%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero {
+    width: 100%;
+}
+
+h2 {
+    font-size: 22px;
+    margin-top: 2.1rem;
+    color: var(--Dark-blue);
+    font-weight: 900;
+}
+
+.container p {
+    margin-top: 17px;
+    text-align: center;
+    font-size: 15px;
+    width: 250px;
+    line-height: 1.6;
+    color: var(--Desaturated-blue);
+}
+
+.flex-price {
+    background-color: var(--Very-pale-blue);
+    display: flex;
+    align-items: center;
+    width: 280px;
+    margin-top: 24px;
+    padding: 13px;
+    border-radius: 10px;
+}
+
+.flex-price img {
+    height: 47px;
+    margin-top: 5px;
+    transform: translateX(5%);
+}
+
+.flex-price ul {
+    margin-left: 24px;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--Dark-blue);
+}
+
+.buttons {
+    margin-top: 23px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.btn-change {
+    height: 50px;
+    width: 279px;
+    border-radius: 10px;
+    font-size: 16.2px;
+    color: white;
+    outline: none;
+    border: none;
+    font-family: 'Red Hat Display';
+}
+
+.btn-button-1 {
+    background-color: var(--Bright-blue);
+    font-weight: 700;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 60%);
+    font-size: 15.5px;
+}
+
+.btn-button-2 {
+    background-color: transparent;
+    color: var(--Desaturated-blue);
+    font-weight: 700;
+    transform: translateY(15%);
+    font-size: 15.5px;
+
+}
+
+.flex-price :nth-child(3) {
+    margin-left: 2.8rem;
+    transform: translateY(-40%);
+    text-decoration: underline;
+    color: var(--Bright-blue);
+    font-size: 13px;
+    font-weight: 900;
+}
+
+.flex-price :nth-child(3):hover {
+    cursor: pointer;
+    opacity: 60%;
+}
+
+.btn-button-1:hover {
+    cursor: pointer;
+    opacity: 60%;
+}
+
+.btn-button-2:hover {
+    color: hsl(223, 47%, 23%);
+    cursor: pointer;
+}
+
+.attribution {
+    font-size: 16px;
+    text-align: center;
+    transform: translateY(130%);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media (min-width: 768px) {
+    body {
+        background-image: url(./images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: var(--Very-pale-blue);
+    }
+
+    .container {
+        max-width: 500px;
+        margin-top: 100px;
+    }
+
+    .container h2 {
+        margin-top: 2.9rem;
+        font-size: 28px;
+    }
+
+    .container p {
+        width: 310px;
+        font-size: 16px;
+    }
+
+    .flex-price {
+        padding: 20px;
+        margin-top: 18px;
+        width: 350px;
+    }
+
+    .flex-price ul {
+        font-size: 16px;
+    }
+
+    .price {
+        transform: translateY(11%);
+        color: var(--Desaturated-blue);
+        font-weight: 700;
+    }
+
+    .plan-change {
+        margin-left: 580px;
+    }
+
+    .buttons {
+        transform: translateY(8%);
+    }
+
+    .btn-button-2 {
+        margin-bottom: 35px;
+        padding: 24px;
+    }
+
+    .btn-change {
+        width: 353px;
+    }
+
+    .flex-price :nth-child(3) {
+        margin-left: 5.5rem;
+        font-size: 13px;
+        margin-top: 21px;
+    }
+
+
+}
